@@ -236,6 +236,7 @@ void Adventure(Hero& h,  Monster m[], int length)
 		if(h.getHealth() <= 0)
 		{
 			c.type(h.getName() + " died", 500, c.red);
+			break;
 		}
 	}
 	c.type(h.getName() + " defeated " + to_string(monstersKilled) + " monsters", 100, c.green);
